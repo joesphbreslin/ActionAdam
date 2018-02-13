@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="EncodableAsset" id="{a35384b5-7975-47d0-bd46-8f7ae0685813}">
+        <property name="assetPath">
+            <value>chester_war_cries/</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{2277a3c4-35d4-4faf-903b-2ae9ddf4e393}</destination>
+        </relationship>
+    </object>
+</objects>

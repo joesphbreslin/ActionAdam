@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{eaba9b62-37a2-4dc6-90aa-d319cfdaf220}">
+        <property name="assetPath">
+            <value>weapons/sniper.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>96</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>2.038875</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{2277a3c4-35d4-4faf-903b-2ae9ddf4e393}</destination>
+        </relationship>
+    </object>
+</objects>

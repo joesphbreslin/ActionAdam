@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LevelGenerator.cs">
+    <Files>
+      <File FileName="Assets\Scripts\AI\AIControllerTest.cs" Line="108" Column="17" />
+      <File FileName="Assets\Scripts\Arm.cs" Line="46" Column="13" />
+      <File FileName="Assets\Scripts\Gun.cs" Line="219" Column="31" />
+      <File FileName="Assets\Scripts\DestroyOrSetActive_AfterSeconds.cs" Line="43" Column="4" />
+      <File FileName="Assets\Scripts\Character_Controller.cs" Line="33" Column="3" />
+      <File FileName="Assets\Scripts\Health.cs" Line="25" Column="44" />
+      <File FileName="Assets\Scripts\LevelGenerator.cs" Line="293" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

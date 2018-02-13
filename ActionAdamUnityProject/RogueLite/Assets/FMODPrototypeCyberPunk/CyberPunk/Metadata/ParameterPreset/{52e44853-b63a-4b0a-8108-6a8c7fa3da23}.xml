@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{52e44853-b63a-4b0a-8108-6a8c7fa3da23}">
+        <property name="name">
+            <value>mini_gun_on_off</value>
+        </property>
+        <relationship name="folder">
+            <destination>{671fb5b9-d374-4627-9b04-c324e9914969}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{fccf1bce-01f5-4f8b-b7b3-b83ee15bfd6f}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{fccf1bce-01f5-4f8b-b7b3-b83ee15bfd6f}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

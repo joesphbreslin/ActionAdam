@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{f17e6a6c-f013-487c-83f8-e70e71a0e0cf}">
+        <property name="name">
+            <value>Strength_level</value>
+        </property>
+        <relationship name="folder">
+            <destination>{671fb5b9-d374-4627-9b04-c324e9914969}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{529a29d4-31b5-4c04-b344-1b58d29f8979}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{529a29d4-31b5-4c04-b344-1b58d29f8979}">
+        <property name="maximum">
+            <value>3</value>
+        </property>
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>
