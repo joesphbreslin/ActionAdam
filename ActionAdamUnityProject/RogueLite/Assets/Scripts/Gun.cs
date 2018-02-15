@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using FMODUnity;
+using FMOD.Studio;
+using FMOD;
+
 
 public class Gun : MonoBehaviour 
 {
@@ -72,15 +75,18 @@ public class Gun : MonoBehaviour
 	public bool debug;
 	public Color debugColor;
 	public float debugFirePointSize;
-	#endregion
+    #endregion
 
-	#endregion
+    #endregion
+    public OneShotAudioScript oneshot;
 
-	private int index;
-
-	// Use this for initialization
-	void Start () 
+    private int index;
+    
+    // Use this for initialization
+    void Start () 
 	{
+
+
 		fireRate = roundsPerMinute / 60;
 
 		startShotTime = 1 / fireRate;
@@ -101,7 +107,8 @@ public class Gun : MonoBehaviour
 
 	void SpawnBullet(Transform _firePoint)
 	{
-		Rigidbody2D bulletPrefabInstance;
+        oneshot.OneShot();
+        Rigidbody2D bulletPrefabInstance;
 		bulletPrefabInstance = Instantiate(bulletPrefab, _firePoint.position, Quaternion.identity) as Rigidbody2D;
 
 		clipAmonut -= 1;
@@ -117,7 +124,9 @@ public class Gun : MonoBehaviour
 
 		Rigidbody2D rb = bulletPrefabInstance.GetComponent<Rigidbody2D>();
 		rb.AddForce(_firePoint.forward * force);
-	}
+
+  
+    }
 
 	void UpdateUI()
 	{
@@ -153,6 +162,8 @@ public class Gun : MonoBehaviour
 		}
 	}
 
+
+
 	public void AIFire()
 	{
 		if(myCharacterType == CharacterType.AI)
@@ -165,7 +176,9 @@ public class Gun : MonoBehaviour
 				{
 					MuzzleFlash(defaultMuzzleFlash);
 
-					SpawnBullet(defaultFirePoint);
+                    
+
+                    SpawnBullet(defaultFirePoint);
 
 					shotTime = startShotTime;
 				}
@@ -190,7 +203,9 @@ public class Gun : MonoBehaviour
 				{
 					MuzzleFlash(defaultMuzzleFlash);
 
-					SpawnBullet(defaultFirePoint);
+               
+
+                    SpawnBullet(defaultFirePoint);
 
 					shotTime = startShotTime;
 				}
@@ -209,8 +224,9 @@ public class Gun : MonoBehaviour
 			if(Input.GetMouseButtonDown(0) && clipAmonut > 0)
 			{
 				MuzzleFlash(defaultMuzzleFlash);
+         
 
-				SpawnBullet(defaultFirePoint);
+                SpawnBullet(defaultFirePoint);
 			}
 		}
 		#endregion
@@ -293,8 +309,9 @@ public class Gun : MonoBehaviour
 				Gizmos.color = debugColor;
 				Gizmos.DrawWireSphere(point.position, debugFirePointSize);
 
+           
 
-				Debug.DrawRay(point.position, point.forward * debugFirePointSize, Color.red);
+                UnityEngine.Debug.DrawRay(point.position, point.forward * debugFirePointSize, Color.red);
 			}
 		}
 	}
