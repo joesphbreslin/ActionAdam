@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="UiMixerView" id="{570310fc-cfc9-4a23-b690-495687a37c60}">
+        <property name="name">
+            <value>MegaAwesomeView</value>
+        </property>
+        <relationship name="assignedStrips">
+            <destination>{8b711873-1f60-4f74-b919-63a4f400f05d}</destination>
+            <destination>{9b38c90f-47a3-4515-9faf-5cc73b47423b}</destination>
+            <destination>{966722da-6877-4035-a834-c463e82eb652}</destination>
+            <destination>{194aeb86-e7ec-4dc4-a5d7-4084fc20b8ff}</destination>
+            <destination>{4660d746-7e24-4319-ba5d-87f523bc7b3f}</destination>
+            <destination>{f2abf595-eb73-4934-992c-1411fd3efb3c}</destination>
+            <destination>{0c5a70d6-fe07-43ce-8715-c2b1c28e9f75}</destination>
+        </relationship>
+        <relationship name="mixer">
+            <destination>{cb57d424-b363-401a-8f75-213efedca3b5}</destination>
+        </relationship>
+    </object>
+</objects>
